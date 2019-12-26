@@ -37,10 +37,10 @@ class CashRegister
 
 
   def void_last_transaction()
-    if @total > 0
+    if @total == @last_transaction_amount
     self.total = self.total - self.last_transaction_amount
     else
-    self.total = self.total - self.price
+    self.total = self.total - self.price.last
     end
 
   end
