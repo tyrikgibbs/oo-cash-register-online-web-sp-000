@@ -40,7 +40,7 @@ class CashRegister
     if @total == @last_transaction_amount
     self.total = self.total - self.last_transaction_amount
     else
-    self.total = self.total - self.price.last
+    self.total = self.total - self.price
     end
 
   end
