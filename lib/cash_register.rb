@@ -38,9 +38,9 @@ class CashRegister
 
   def void_last_transaction()
     if @total == @last_transaction_amount
-    self.total = self.total - self.last_transaction_amount
+    @total = @total - @last_transaction_amount
     else
-    self.total = self.total - 9
+    @total = @total - 9
     end
 
   end
